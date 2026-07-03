@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import {LoginPage} from './Routes.js'
+import {LoginPage, SignupPage} from './Routes.js'
 import{BrowserRouter, Routes, Route} from 'react-router-dom'
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
@@ -14,6 +14,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/login" element={<LoginPage />} />
+          <Route path="/signup" element={<SignupPage />} />
         </Routes>
       </BrowserRouter>
     </>
